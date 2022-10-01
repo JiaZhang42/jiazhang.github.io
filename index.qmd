@@ -11,6 +11,7 @@ about:
 ---
 
 ## Hi there!
+
 <a href="mailto:{{< var email >}}" title="email"><i class="fa-solid fa-envelope"></i></a> {{< var email >}}
 
 I'm Jia.

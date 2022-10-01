@@ -11,6 +11,8 @@ website:
     left:
       - about.qmd
       
+  favicon: "/images/favicon.png"
+      
   page-footer:
     left: "Content {{< fa brands creative-commons >}} {{< var page.copyright_year >}} by [{{< var name >}}]({{< var url >}})"
     right: |
