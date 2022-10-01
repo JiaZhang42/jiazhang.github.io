@@ -12,9 +12,7 @@ about:
 
 ## Hi there!
 
-<a href="mailto:{{< var email >}}" title="email"><i class="fa-solid fa-envelope"></i></a> {{< var email >}}
-
-I'm Jia.
+I'm Jia. Feel free to email me <a href="mailto:{{< var email >}}" title="jzhanggx@connect.ust.hk"><i class="fa-solid fa-envelope"></i></a>.
 
 ## Education
 

@@ -10,6 +10,11 @@ website:
     background: "#455D3E"
     left:
       - about.qmd
+      - research.qmd
+      - blog.qmd
+      - href: cv/jia_cv.pdf
+        text: CV
+
       
   favicon: "/images/favicon.png"
       
@@ -23,7 +28,7 @@ format:
   html:
     theme: 
       - united
-      - style.scss
+      - styles.scss
     toc: true
     highlight-style: monokai
 
