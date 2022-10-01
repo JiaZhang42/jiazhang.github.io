@@ -11,6 +11,7 @@ website:
     left:
       - about.qmd
       - research.qmd
+      - teaching.qmd
       - blog.qmd
       - href: cv/jia_cv.pdf
         text: CV
