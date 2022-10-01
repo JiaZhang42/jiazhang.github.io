@@ -1,7 +1,21 @@
 ---
-title: "jiazhang.github.io"
+title: "Jia ZHANG"
+image: images/profile.jpg
+about: 
+  template: trestles
+  image-shape: rounded
+  image-width: 20em
+  links:
+    - icon: github
+      href: https://github.com/JiaZhang42
+    - icon: envelope
+      href: jzhanggx@connect.ust.hk
 ---
 
-This is a Quarto website.
+## Hi there!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I'm Jia.
+
+## Education
+
+## Research Interests
