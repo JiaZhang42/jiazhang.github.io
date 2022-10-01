@@ -4,17 +4,26 @@ project:
 
 website:
   title: "JIA"
+  site-url: "https://jiazhang42.github.io/mysite/"
   navbar:
+    pinned: true
+    background: "#455D3E"
     left:
-      - href: index.qmd
-        text: Home
       - about.qmd
+      
+  page-footer:
+    left: "Content {{< fa brands creative-commons >}} {{< var page.copyright_year >}} by [{{< var name >}}]({{< var url >}})"
+    right: |
+      Made with {{< fa heart >}} and [Quarto](https://quarto.org/)<br>
+      [View source code at {{< fa brands github >}} GitHub]({{< var github >}})
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: 
+      - united
+      - style.scss
     toc: true
+    highlight-style: monokai
 
 
 

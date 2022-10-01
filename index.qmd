@@ -1,18 +1,17 @@
 ---
-title: "Jia ZHANG"
+title: "{{< var name >}}"
+subtitle: "{{< var status >}}, {{< var year >}} at {{< var school.short >}}"
 image: images/profile.jpg
+toc: false
+sidebar: false
 about: 
   template: trestles
   image-shape: rounded
   image-width: 20em
-  links:
-    - icon: github
-      href: https://github.com/JiaZhang42
-    - icon: envelope
-      href: jzhanggx@connect.ust.hk
 ---
 
 ## Hi there!
+<a href="mailto:{{< var email >}}" title="email"><i class="fa-solid fa-envelope"></i></a> {{< var email >}}
 
 I'm Jia.
 
