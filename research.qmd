@@ -1,3 +1,11 @@
 ---
 title: "Research"
 ---
+
+## First-Year Survey Paper
+
+[Meme Trading and Social Transmission Bias](https://drive.google.com/file/d/17AfAWcohxyzq1hB47jA0sgn4okExcoq9/view?usp=sharing) with [Slides](https://drive.google.com/file/d/1PYXhS_C4xqKNP5qqeL3f09SPUIP-xFNg/view?usp=sharing), Fall 2022.
+
+[Abstract]{.red}
+
+This paper surveys the emergent literature on meme trading, an evolutionary view of financial markets in the presence of social networks, in response to the fables of social finance in David Hirshleifer's presidential address. I discussed recent literature on four subtopics of meme trading including [attention]{.forest}, [network structure]{.forest}, [social transmission biases]{.forest}, and [narratives and interpretation]{.forest}. I highlighted their relations and listed the questions that await answering. I also provided a critical review of Cookson et al.(2022), which uses echo chambers, a type of social transmission bias, to explain persistent disagreement and high trading volume.
