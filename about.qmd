@@ -5,7 +5,7 @@ execute:
 ---
 
 ::: column-screen
-![](images/sealine.jpg)
+![](images/sealine.JPG)
 :::
 
 
