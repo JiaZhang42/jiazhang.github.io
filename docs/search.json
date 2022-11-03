@@ -2,30 +2,30 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Jia ZHANG",
+    "title": "Jia ZHANG (张佳)",
     "section": "",
-    "text": "I’m Jia. Feel free to email me ."
+    "text": "I’m Jia, a Ph.D. student at Department of Finance at Hong Kong University of Science and Technology. Feel free to email me ."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About Me",
+    "title": "JIA",
     "section": "",
-    "text": "Other self-intro about school life"
+    "text": "Who am I?\n\n\n\n\n\n\n\nsome self-introduction\n\n\n\n\n\n\nOther self-intro about school life"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
-    "title": "Jia ZHANG",
+    "title": "Jia ZHANG (张佳)",
     "section": "Education",
-    "text": "Education"
+    "text": "Education\nMaster in Quantitative Economics (2021)\nRenmin University of China | Beijing, China\nBachelor in Finance (2018)\nSouthwestern University of Finance and Economics | Chengdu, Sichuan, China"
   },
   {
     "objectID": "index.html#research-interests",
     "href": "index.html#research-interests",
-    "title": "Jia ZHANG",
+    "title": "Jia ZHANG (张佳)",
     "section": "Research Interests",
-    "text": "Research Interests"
+    "text": "Research Interests\nI’m interested in information transmission, belief formation, and persuasion in the financial market when social networks (especially social media) are present and how they affect trading behavior and asset prices."
   },
   {
     "objectID": "research.html",
@@ -33,5 +33,12 @@
     "title": "Research",
     "section": "",
     "text": "Meme Trading and Social Transmission Bias with Slides, Fall 2022.\nAbstract\nThis paper surveys the emergent literature on meme trading, an evolutionary view of financial markets in the presence of social networks, in response to the fables of social finance in David Hirshleifer’s presidential address. I discussed recent literature on four subtopics of meme trading including attention, network structure, social transmission biases, and narratives and interpretation. I highlighted their relations and listed the questions that await answering. I also provided a critical review of Cookson et al.(2022), which uses echo chambers, a type of social transmission bias, to explain persistent disagreement and high trading volume."
+  },
+  {
+    "objectID": "about.html#who-am-i",
+    "href": "about.html#who-am-i",
+    "title": "JIA",
+    "section": "Who am I?",
+    "text": "Who am I?\n\n\n\n\n\n\nsome self-introduction\n\n\n\n\n\n\nOther self-intro about school life"
   }
 ]

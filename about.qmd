@@ -1,16 +1,23 @@
 ---
-title: "About Me"
+toc: false
 execute: 
   echo: false
 ---
 
+::: column-screen
+![](images/sealine.jpg)
+:::
 
-:::{layout="[50,50]"}
+
+<b><font size="+2">Who am I?</font></b>
+------------------------------------------------------------------------
+
+
+::: {layout="[50,50]"}
 ![](images/marvin.jpg)
 
 some self-introduction
 :::
-
 
 ::: {#map layout="[55,5,40]" layout-valign="top"}
 Other self-intro about school life

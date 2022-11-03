@@ -9,7 +9,8 @@ website:
     pinned: true
     background: "#455D3E"
     left:
-      - about.qmd
+      - href: about.qmd
+        text: About
       - research.qmd
       - teaching.qmd
       - blog.qmd
