@@ -3,22 +3,63 @@ toc: false
 execute: 
   echo: false
 ---
+
 ::: column-screen
 ![](images/sealine.JPG)
 :::
 
-<b><font size="+2">Who am I?</font></b>
-------------------------------------------------------------------------
+## <b><font size="+2">Who am I?</font></b>
 
+I grew up in Neijiang, a small city in Sichuan, China.
 
-::: {layout="[50,50]"}
+::: {layout="[40,60]"}
 ![](images/marvin.jpg)
 
-some self-introduction...
+::: {#likes}
+I like:
+
+-   science fiction
+
+    -   My favorite authors include [Stanisław Lem](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Lem), [Douglas Adams](https://en.wikipedia.org/wiki/Douglas_Adams) and [Ted Chiang](https://en.wikipedia.org/wiki/Ted_Chiang).
+
+-   cooking
+
+    -   It helps me enter "flow state" (otherwise my life would be in danger). Besides, I cook well with recipes.
+
+-   stand-up comedy and comedies in general
+
+    -   my top-5 comedy show:
+        -   [Louie](https://en.wikipedia.org/wiki/Louie_(American_TV_series)) (by Louis C.K.)
+
+        -   [Nathan for You](https://en.wikipedia.org/wiki/Nathan_for_You) (by Nathan Fielder)
+
+        -   [Community](https://en.wikipedia.org/wiki/Community_(TV_series)) (by Dan Harmon)
+
+        -   [Black Books](https://en.wikipedia.org/wiki/Black_Books) (by Dylan Moran)
+
+        -   [Fleabag Season 2](https://en.wikipedia.org/wiki/Fleabag) (by Phoebe Waller-Bridge)
+:::
 :::
 
 ::: {#map layout="[55,5,40]" layout-valign="top"}
-Other self-intro about school life
+::: {#dislikes}
+I don't like:
+
+-   small talks
+    -   Why would people ask questions they don't want to know answers to?
+-   hiking
+    -   No one needs to do exactly what Sisyphos does to know that life is meaningless.
+
+------------------------------------------------------------------------
+
+I now live on campus. I love the weather in Hong Kong and the view of sea.
+
+I enjoy sharing the campus with wild boars and dogs because they remind me that compared to them I'm an apeman.
+
+::: center
+{{< video https://www.youtube.com/embed/aRHqs8SffDo width="200" >}}
+:::
+:::
 
 <br>
 
@@ -29,5 +70,3 @@ leaflet() %>%
   addMarkers(lat=22.334, lng=114.265, popup="HKUST Business School")
 ```
 :::
-
-
