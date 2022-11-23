@@ -53,6 +53,6 @@
     "href": "blog/website-quarto/index.html",
     "title": "Use Quarto to Build My Personal Website",
     "section": "",
-    "text": "BibTeX citation:@online{zhang2022,\n  author = {Jia Zhang},\n  editor = {},\n  title = {Use {Quarto} to {Build} {My} {Personal} {Website}},\n  date = {2022-11-23},\n  url = {https://jiazhang42.github.io/mysite/blog/website-quarto/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nJia Zhang. 2022. “Use Quarto to Build My Personal Website.”\nNovember 23, 2022. https://jiazhang42.github.io/mysite/blog/website-quarto/."
+    "text": "CitationBibTeX citation:@online{zhang2022,\n  author = {Jia Zhang},\n  title = {Use {Quarto} to {Build} {My} {Personal} {Website}},\n  date = {2022-11-23},\n  url = {https://jiazhang42.github.io/mysite/blog/website-quarto/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nJia Zhang. 2022. “Use Quarto to Build My Personal Website.”\nNovember 23, 2022. https://jiazhang42.github.io/mysite/blog/website-quarto/."
   }
 ]
