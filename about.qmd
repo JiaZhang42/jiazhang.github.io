@@ -41,7 +41,7 @@ I like:
 :::
 :::
 
-::: {#map layout="[55,5,40]" layout-valign="top"}
+::: {#map layout="[55,5,40]" layout-valign="bottom"}
 ::: {#dislikes}
 I don't like:
 
