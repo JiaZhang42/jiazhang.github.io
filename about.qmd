@@ -3,11 +3,9 @@ toc: false
 execute: 
   echo: false
 ---
-
 ::: column-screen
 ![](images/sealine.JPG)
 :::
-
 
 <b><font size="+2">Who am I?</font></b>
 ------------------------------------------------------------------------
@@ -31,3 +29,5 @@ leaflet() %>%
   addMarkers(lat=22.334, lng=114.265, popup="HKUST Business School")
 ```
 :::
+
+

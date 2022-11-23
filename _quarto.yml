@@ -16,6 +16,8 @@ website:
       - blog.qmd
       - href: cv/jia_cv.pdf
         text: CV
+      - href: google2f8aad75c360b5d9.html
+        text: verification
 
       
   favicon: "/images/favicon.png"

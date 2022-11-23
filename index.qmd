@@ -7,7 +7,7 @@ sidebar: false
 about: 
   template: trestles
   image-shape: rounded
-  image-width: 15em
+  image-width: 12em
 ---
 
 ## Hi there!
