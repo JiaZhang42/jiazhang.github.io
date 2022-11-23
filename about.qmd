@@ -14,7 +14,7 @@ execute:
 ::: {layout="[50,50]"}
 ![](images/marvin.jpg)
 
-some self-introduction
+some self-introduction...
 :::
 
 ::: {#map layout="[55,5,40]" layout-valign="top"}
