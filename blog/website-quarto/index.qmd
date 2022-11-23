@@ -1,0 +1,15 @@
+---
+title: "Use Quarto to Build My Personal Website"
+description: "My learning experience plus some excellent resources"
+author:
+  - name: Jia Zhang
+    url: https://jiazhang42.github.io/mysite/ 
+    #affiliation: 
+    #affiliation-url:
+date: 11-23-2022
+categories: [Quarto, R, Tools] # self-defined categories
+citation: 
+  url: https://jiazhang42.github.io/mysite/blog/website-quarto/ 
+image: office_preview.gif
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---

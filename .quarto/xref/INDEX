@@ -13,5 +13,8 @@
   },
   "teaching.qmd": {
     "teaching.html": "f92e8993"
+  },
+  "blog/website-quarto/index.qmd": {
+    "index.html": "b4ada974"
   }
 }

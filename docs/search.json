@@ -40,5 +40,19 @@
     "title": "JIA",
     "section": "Who am I?",
     "text": "Who am I?\n\n\n\n\n\n\nsome self-introduction…\n\n\n\n\n\n\nOther self-intro about school life"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "Quarto\n\n\nR\n\n\nTools\n\n\n\n\nMy learning experience plus some excellent resources\n\n\n\n\n\n\nNov 23, 2022\n\n\nJia Zhang\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/website-quarto/index.html",
+    "href": "blog/website-quarto/index.html",
+    "title": "Use Quarto to Build My Personal Website",
+    "section": "",
+    "text": "BibTeX citation:@online{zhang2022,\n  author = {Jia Zhang},\n  editor = {},\n  title = {Use {Quarto} to {Build} {My} {Personal} {Website}},\n  date = {2022-11-23},\n  url = {https://jiazhang42.github.io/mysite/blog/website-quarto/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nJia Zhang. 2022. “Use Quarto to Build My Personal Website.”\nNovember 23, 2022. https://jiazhang42.github.io/mysite/blog/website-quarto/."
   }
 ]
