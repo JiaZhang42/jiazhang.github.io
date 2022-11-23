@@ -8,7 +8,7 @@ execute:
 ![](images/sealine.JPG)
 :::
 
-## <b><font size="+2">Who am I?</font></b>
+## <b><font size="+2">If you want to know more about me...</font></b>
 
 I grew up in Neijiang, a small city in Sichuan, China.
 
@@ -48,7 +48,7 @@ I don't like:
 -   small talks
     -   Why would people ask questions they don't want to know answers to?
 -   hiking
-    -   No one needs to do exactly what Sisyphos does to know that life is meaningless.
+    -   One doesn't need to do exactly what Sisyphos did to know that life is meaningless.
 
 ------------------------------------------------------------------------
 
