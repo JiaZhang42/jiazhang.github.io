@@ -10,15 +10,15 @@ website:
     background: "#455D3E"
     left:
       - research.qmd
-      - teaching.qmd
+      #- teaching.qmd
       - href: blog.qmd
         text: Blog
       - href: about.qmd
         text: About
       - href: cv/jia_cv.pdf
         text: CV
-      - href: google2f8aad75c360b5d9.html
-        text: .
+      #- href: google2f8aad75c360b5d9.html
+      #  text: .
 
       
   favicon: "/images/favicon.png"

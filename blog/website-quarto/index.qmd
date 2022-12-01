@@ -12,4 +12,21 @@ citation:
   url: https://jiazhang42.github.io/mysite/blog/website-quarto/ 
 image: office_preview.gif
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+bibliography: references.bib
 ---
+
+[Quarto](https://quarto.org/) is a multi-language (e.g., R, Python, Julia), next generation version of R Markdown from RStudio (rebranded as Posit recently). It can create reports, presentations, websites, and books in HTML, PDF, MS Word, etc.
+
+I learned about Quarto from [#rstats](https://twitter.com/hashtag/rstats?src=hashtag_click). Before that, I barely used R Markdown. I was more used to separating the result-generating process from publishing. My workflow was an R project (containing data, code, and output) plus a Latex folder. When I saw Quarto, I thought, this was the time to make a change.
+
+Quarto has many unique features, such as a single `.qmd` file for all output formats. One can generate HTML, PDF, MS Word with a one-line change in the YAML. [Citations](https://quarto.org/docs/authoring/footnotes-and-citations.html) are super easy, especially for people who also work with Zotero. Besides, as a [Notion](https://www.notion.so/) user, I like all-in-one tools because there is always a universal logic underlying the diverse functions, then why bother to reinvent the wheel?
+
+I first tried to use Quarto for my presentation because I was tired of Beamer. [Revealjs presentations](https://quarto.org/docs/presentations/revealjs/) created by Quarto are fantastic. Remember when you have to squeeze your table or figure into one slide only to find it too small for the audience? Revealjs gets you a scrollable slide. I also like the preview-links option, which allows one to open links without interrupting the presentation flow. Another convenient thing about Quarto is that you can copy and paste figures directly into the visual editor. With [all these features](https://quarto.org/docs/presentations/revealjs/demo/#/title-slide), the next step is to know some art about slide craft - how to put together slides that are functional and aesthetically pleasing. Emil Hvitfeldt keeps [an excellent blog](https://www.emilhvitfeldt.com/post/slidecraft-colors-fonts/) about this.
+
+Soon after, I started to build this website with Quarto. As a complete novice, [Sam Csik's tutorial](https://ucsb-meds.github.io/creating-quarto-websites/) helped me a lot! I also bought a lot from [Sam Csik's website](https://samanthacsik.github.io/).
+
+I recently found an up-to-date list of [Quarto resources](https://github.com/mcanouil/awesome-quarto). It is comprehensive and quality guaranteed. Why bother to write this blog? The reason is from a [blog post](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045) by Rachel Thomas:
+
+> You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you're writing about.
+
+Researchers often think there is no need to write something of no contribution (i.e., adding no value to the existing literature), which is definitely true to some extent. But remember, we are in the best position to help people in our neighborhood who may have no access to the resources or see those resources but are frightened by jargon.
