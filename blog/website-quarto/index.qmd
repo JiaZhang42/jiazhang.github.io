@@ -13,6 +13,7 @@ citation:
 image: office_preview.gif
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 bibliography: references.bib
+
 ---
 
 <!-- [Quarto](https://quarto.org/) is a multi-language (e.g., R, Python, Julia), next generation version of R Markdown from RStudio (rebranded as Posit recently). It can create reports, presentations, websites, and books in HTML, PDF, MS Word, etc. -->

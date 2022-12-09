@@ -19,6 +19,8 @@ website:
         text: CV
       #- href: google2f8aad75c360b5d9.html
       #  text: .
+  search: 
+    location: navbar
 
       
   favicon: "/images/favicon.png"
@@ -32,8 +34,8 @@ website:
 format:
   html:
     theme: 
-      - united
-      - styles.scss
+      light: [united, styles.scss]
+      dark: [united, styles-dark.scss]
     toc: true
     highlight-style: monokai
 
