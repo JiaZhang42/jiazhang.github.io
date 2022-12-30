@@ -12,11 +12,11 @@ about:
 
 ## Hi there!
 
-I'm Jia, a Ph.D. student at **Department of Finance** at **Hong Kong University of Science and Technology**. Feel free to email me <a href="mailto:{{< var email >}}" title="jzhanggx@connect.ust.hk"><i class="fa-solid fa-envelope"></i></a>.
+I'm Jia, a Ph.D. student at **Department of Finance** at **Hong Kong University of Science and Technology**. Feel free to email me <a href="mailto:{{< var email >}}" title="{{< var email >}}"><i class="fa-solid fa-envelope"></i></a>.
 
 ## Research Interests
 
-I'm interested in information transmission, belief formation, and persuasion in the financial market when social networks (especially social media) are present and how they affect trading behavior and asset prices.
+I'm interested in information transmission, belief formation, and persuasion in the financial market when social networks (especially social media) are present, and how they affect trading behavior and asset prices.
 
 ------------------------------------------------------------------------
 
