@@ -1,0 +1,66 @@
+---
+title: "Intuition for Do-Calculus"
+description: "Understanding do-calculus without math proof"
+author:
+  - name: Jia Zhang
+    url: https://jiazhang42.github.io/mysite/ 
+    #affiliation: 
+    #affiliation-url:
+date: 01-01-2023
+categories: [Causal Inference] # self-defined categories
+citation: 
+  url: https://jiazhang42.github.io/mysite/blog/do-calculus/ 
+image: frontdoor.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+#bibliography: references.bib
+---
+
+I recently read *[Introduction to Causal Inference from a Machine Learning Perspective](https://www.bradyneal.com/Introduction_to_Causal_Inference-Dec17_2020-Neal.pdf)* by [Brady Neal](https://www.bradyneal.com/aboutme) for fun. I'm familar with applied causal inference techniques such as IV, DID, and RDD, but I'm not familiar with causal graphs. So, I decided to start from Neal's lecture notes when I saw the helpful flowchart he made:
+
+[![](images/books_flowchart.svg)](https://www.bradyneal.com/which-causal-inference-book)
+
+In chapter 6, Neal introduces Pearl's do-calculus, which allows us to identify any causal estimand that is identifiable as long as we have the correct causal graph. The three rules of do-calculus are:
+
+
+::: {.callout-note icon=false}
+
+## Theorem 6.2 (Rules of do-calculus)
+
+Given a causal graph $G$, an associated distribution $P$, and disjoint sets of variables $Y, T, Z,$ and $W$, the following rules hold.
+
+Rule 1:
+$$
+P(y|do(t), z, w)=P(y|do(t), w) \quad \text{if} \quad Y \perp\!\!\!\perp_{G_\bar{T}} Z | T,W
+$$
+Rule 2:
+$$
+P(y|do(t), do(z), w) = P(y|do(t), z, w) \quad \text{if} \quad Y \perp\!\!\!\perp_{G_{\bar{T}, \underline{Z}}} Z | T,W
+$$
+Rule 3:
+$$
+P(y|do(t), do(z), w) = P(y|do(t), w) \quad \text{if} \quad Y \perp\!\!\!\perp_{G_{\bar{T}, \bar{Z}(W)}} Z | T,W
+$$
+where $Z(W)$ denotes the sets of nodes of $Z$ that aren't ancestors of any node of $W$ in $G_{\bar{T}}$.
+:::
+
+Without rigorous proofs, it can be difficult to understand why these three rules are complete. At first, they seemed quite arbitrary to me, even with Neal's explanation. I couldn't see the connections among them. But after thinking about it more, I was able to gain some intuition that really helped me understand and remember them.
+
+The goal of do-calculus is *identification* - turning *causal estimand* into *statistical estimand*. And the way to do this is to rely on *conditional independence*. We know that association can be divided into *causal association* and *non-causal association*. Therefore, we consider three types of independence: 
+
+- no association 
+- no non-causal association
+- no causal association.
+
+The three rules correspond to these three types of independence, respectively.
+
+Rule 1 says if there is no association between $Y$ and $Z$ conditioning on some intervened variables $T$ and observed variables $W$, then we can remove $Z$.
+
+Rule 2 says if there is no non-causal association between $Y$ and $Z$ conditioning on some intervened variables $T$ and observed variables $W$, then we can transform $do(Z)$ into $Z$ (because causal association is the only association left). Note that causal association must flow though the edges going out of $Z$, and by removing those edges, we focus on the non-causal independence.
+
+Rule 3 says if there is no causal association between $Y$ and $Z$ conditioning on some intervened variables $T$ and observed variables $W$, then we can remove $do(Z)$. Because we want to get rid of non-causal association in the graph, we remove all edges flowing into $Z$. But note that when removing $do(Z)$ from the conditioning set, we are recovering the inflow edges of $Z$. And if $Z$ contains colliders that are ancestors of $W$, then conditioning on $W$ (i.e., conditioning on the descendants of a collider) would introduce new association that can affect $Y$. We don't have this problem in Rule 2's situation because if some variable wants to associate with $Y$ through a collider in $Z$, then $Z$ and $Y$ must have non-causal association, which violates our assumption (the *if* clause in Rule 2).
+
+Therefore, we need to divide $Z$ into 2 categories: $Z(W)$, nodes of $Z$ that aren't ancestors of $W$, and the rest. For $Z(W)$, we assume $Z$ and $Y$ have no causal association; for the rest, we assume they have no association, which is a stronger assumption.
+
+I hope this helps give you a better understanding of the three rules of do-calculus.
+
+

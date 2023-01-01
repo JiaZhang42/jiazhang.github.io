@@ -16,5 +16,8 @@
   },
   "blog/website-quarto/index.qmd": {
     "index.html": "b4ada974"
+  },
+  "blog/do-calculus/index.qmd": {
+    "index.html": "874e6a50"
   }
 }

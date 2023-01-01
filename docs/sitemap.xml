@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jiazhang42.github.io/mysite/index.html</loc>
-    <lastmod>2022-12-30T08:01:10.129Z</lastmod>
+    <lastmod>2023-01-01T08:11:30.567Z</lastmod>
   </url>
   <url>
     <loc>https://jiazhang42.github.io/mysite/about.html</loc>
-    <lastmod>2022-12-09T11:48:14.512Z</lastmod>
+    <lastmod>2023-01-01T09:14:48.671Z</lastmod>
   </url>
   <url>
     <loc>https://jiazhang42.github.io/mysite/blog.html</loc>
-    <lastmod>2022-12-09T11:48:18.544Z</lastmod>
+    <lastmod>2023-01-01T11:22:28.047Z</lastmod>
   </url>
   <url>
     <loc>https://jiazhang42.github.io/mysite/research.html</loc>
@@ -23,5 +23,9 @@
   <url>
     <loc>https://jiazhang42.github.io/mysite/blog/website-quarto/index.html</loc>
     <lastmod>2022-12-09T11:48:10.347Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jiazhang42.github.io/mysite/blog/do-calculus/index.html</loc>
+    <lastmod>2023-01-01T11:22:27.653Z</lastmod>
   </url>
 </urlset>

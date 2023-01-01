@@ -7,5 +7,5 @@ freeze: true
 title-block-banner: true
 
 comments:
-  hypothesis: true
+  hypothesis: false
 
