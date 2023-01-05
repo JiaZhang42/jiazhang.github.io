@@ -1,6 +1,6 @@
 ---
 title: Detailed Proof of IPW Identification
-description: $E[Y(1)-Y(0)] = E[\frac{\mathbb{1}(T=1)Y}{e(W)}]-E[\frac{\mathbb{1}(T=0)Y}{1-e(W)}]$
+description: ${\scriptstyle E[Y(1)-Y(0)] \\ = E[\frac{\mathbb{1}(T=1)Y}{e(W)}]-E[\frac{\mathbb{1}(T=0)Y}{1-e(W)}]}$
 author:
   - name: Jia Zhang
     url: https://jiazhang42.github.io/mysite/ 
@@ -9,7 +9,7 @@ author:
 date: 01-05-2023
 categories: [Causal Inference] # self-defined categories
 citation: 
-  url: https://jiazhang42.github.io/mysite/blog/do-calculus/ 
+  url: https://jiazhang42.github.io/mysite/blog/ipw/ 
 #image: frontdoor.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 #bibliography: references.bib
