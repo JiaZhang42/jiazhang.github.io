@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/ipw/index.html",
       "/blog/do-calculus/index.html",
       "/blog/website-quarto/index.html"
     ]

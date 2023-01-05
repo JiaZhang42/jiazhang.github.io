@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jia Zhang">
-<meta name="dcterms.date" content="2023-01-01">
-<meta name="description" content="Understanding do-calculus without math proof">
+<meta name="dcterms.date" content="2023-01-05">
+<meta name="description" content="E[Y(1)-Y(0)] = E[\frac{\mathbb{1}(T=1)Y}{e(W)}]-E[\frac{\mathbb{1}(T=0)Y}{1-e(W)}]">
 
-<title>JIA - Intuition for Do-Calculus</title>
+<title>JIA - Detailed Proof of IPW Identification</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,10 +115,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Intuition for Do-Calculus</h1>
+      <h1 class="title">Detailed Proof of IPW Identification</h1>
                   <div>
         <div class="description">
-          Understanding do-calculus without math proof
+          <span class="math inline">\(E[Y(1)-Y(0)] = E[\frac{\mathbb{1}(T=1)Y}{e(W)}]-E[\frac{\mathbb{1}(T=0)Y}{1-e(W)}]\)</span>
         </div>
       </div>
                           <div class="quarto-categories">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 1, 2023</p>
+        <p class="date">January 5, 2023</p>
       </div>
     </div>
     
@@ -160,59 +160,61 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>I recently read <em><a href="https://www.bradyneal.com/Introduction_to_Causal_Inference-Dec17_2020-Neal.pdf">Introduction to Causal Inference from a Machine Learning Perspective</a></em> by <a href="https://www.bradyneal.com/aboutme">Brady Neal</a> for fun. I’m familar with applied causal inference techniques such as IV, DID, and RDD, but I’m not familiar with causal graphs. So, I decided to start from Neal’s lecture notes when I saw the helpful flowchart he made:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://www.bradyneal.com/which-causal-inference-book"><img src="images/books_flowchart.svg" class="img-fluid figure-img"></a></p>
-</figure>
-</div>
-<p>In chapter 6, Neal introduces Pearl’s do-calculus, which allows us to identify any causal estimand that is identifiable as long as we have the correct causal graph. The three rules of do-calculus are:</p>
-<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<p>We need to prove that under unconfoundedness and positivity,</p>
+<p><span class="math inline">\(EY(t) = E\frac{\mathbb{1}(T=t)Y}{P(t|W)}.\)</span></p>
+<div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Theorem 6.2 (Rules of do-calculus)
+Proof
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Given a causal graph <span class="math inline">\(G\)</span>, an associated distribution <span class="math inline">\(P\)</span>, and disjoint sets of variables <span class="math inline">\(Y, T, Z,\)</span> and <span class="math inline">\(W\)</span>, the following rules hold.</p>
-<p>Rule 1: <span class="math display">\[
-P(y|do(t), z, w)=P(y|do(t), w) \quad \text{if} \quad Y \perp\!\!\!\perp_{G_\bar{T}} Z | T,W
-\]</span> Rule 2: <span class="math display">\[
-P(y|do(t), do(z), w) = P(y|do(t), z, w) \quad \text{if} \quad Y \perp\!\!\!\perp_{G_{\bar{T}, \underline{Z}}} Z | T,W
-\]</span> Rule 3: <span class="math display">\[
-P(y|do(t), do(z), w) = P(y|do(t), w) \quad \text{if} \quad Y \perp\!\!\!\perp_{G_{\bar{T}, \bar{Z}(W)}} Z | T,W
-\]</span> where <span class="math inline">\(Z(W)\)</span> denotes the sets of nodes of <span class="math inline">\(Z\)</span> that aren’t ancestors of any node of <span class="math inline">\(W\)</span> in <span class="math inline">\(G_{\bar{T}}\)</span>.</p>
+<p><span class="math display">\[
+\begin{split}
+EY(t) &amp;= E(Y|do(t))\\
+&amp;= EE(Y|do(t), W)\\
+&amp;= EE(Y|t, W)\\
+&amp;= \Sigma_w E(Y|t, w) P(w)\\
+&amp;= \Sigma_w \Sigma_y y P(y|t,w) P(w)\\
+&amp;= \Sigma_w \Sigma_y y \frac{P(y,t,w)}{P(t,w)} P(w)\\
+&amp;= \Sigma_w \Sigma_y y P(y,t,w)\frac{1}{P(t|w)}\\
+&amp;= \Sigma_w \Sigma_y y E(\mathbb{1}(Y=y,T=t,W=w))\frac{1}{P(t|w)}\\
+&amp;= \Sigma_w E(\Sigma_y y \mathbb{1}(Y=y) \mathbb{1}(T=t,W=w))\frac{1}{P(t|w)}\\
+&amp;= \Sigma_w E(Y \mathbb{1}(T=t,W=w))\frac{1}{P(t|w)}\\
+&amp;= E(Y \mathbb{1}(T=t) \Sigma_w \mathbb{1}(W=w)\frac{1}{P(t|w)})\\
+&amp;= E(Y \mathbb{1}(T=t) \frac{1}{P(t|W)})
+\end{split}
+\]</span></p>
 </div>
 </div>
-<p>Without rigorous proofs, it can be difficult to understand why these three rules are complete. At first, they seemed quite arbitrary to me, even with Neal’s explanation. I couldn’t see the connections among them. But after thinking about it more, I was able to gain some intuition that really helped me understand and remember them.</p>
-<p>The goal of do-calculus is <em>identification</em> - turning <em>causal estimand</em> into <em>statistical estimand</em>. And the way to do this is to rely on <em>conditional independence</em>. We know that association can be divided into <em>causal association</em> and <em>non-causal association</em>. Therefore, we consider three types of independence:</p>
+<p>Note that we used the following properties of the indicator function:</p>
 <ul>
-<li>no association</li>
-<li>no non-causal association</li>
-<li>no causal association.</li>
+<li><p><span class="math display">\[
+E\mathbb{1}(X=x) = P(X=x)
+\]</span></p></li>
+<li><p><span class="math display">\[
+\mathbb{1}(X=x, Y=y) = \mathbb{1}(X=x) \mathbb{1}(Y=y)
+\]</span></p></li>
+<li><p><span class="math display">\[
+\Sigma_x \mathbb{1}(X=x)f(x) = f(X)
+\]</span></p></li>
 </ul>
-<p>The three rules correspond to these three types of independence, respectively.</p>
-<p>Rule 1 says if there is no association between <span class="math inline">\(Y\)</span> and <span class="math inline">\(Z\)</span> conditioning on some intervened variables <span class="math inline">\(T\)</span> and observed variables <span class="math inline">\(W\)</span>, then we can remove <span class="math inline">\(Z\)</span>.</p>
-<p>Rule 2 says if there is no non-causal association between <span class="math inline">\(Y\)</span> and <span class="math inline">\(Z\)</span> conditioning on some intervened variables <span class="math inline">\(T\)</span> and observed variables <span class="math inline">\(W\)</span>, then we can transform <span class="math inline">\(do(Z)\)</span> into <span class="math inline">\(Z\)</span> (because causal association is the only association left). Note that causal association must flow though the edges going out of <span class="math inline">\(Z\)</span>, and by removing those edges, we focus on the non-causal independence.</p>
-<p>Rule 3 says if there is no causal association between <span class="math inline">\(Y\)</span> and <span class="math inline">\(Z\)</span> conditioning on some intervened variables <span class="math inline">\(T\)</span> and observed variables <span class="math inline">\(W\)</span>, then we can remove <span class="math inline">\(do(Z)\)</span>. Because we want to get rid of non-causal association in the graph, we remove all edges flowing into <span class="math inline">\(Z\)</span>. But note that when removing <span class="math inline">\(do(Z)\)</span> from the conditioning set, we are recovering the inflow edges of <span class="math inline">\(Z\)</span>. And if <span class="math inline">\(Z\)</span> contains colliders that are ancestors of <span class="math inline">\(W\)</span>, then conditioning on <span class="math inline">\(W\)</span> (i.e., conditioning on the descendants of a collider) would introduce new association that can affect <span class="math inline">\(Y\)</span>. We don’t have this problem in Rule 2’s situation because if some variable wants to associate with <span class="math inline">\(Y\)</span> through a collider in <span class="math inline">\(Z\)</span>, then <span class="math inline">\(Z\)</span> and <span class="math inline">\(Y\)</span> must have non-causal association, which violates our assumption (the <em>if</em> clause in Rule 2).</p>
-<p>Therefore, we need to divide <span class="math inline">\(Z\)</span> into 2 categories: <span class="math inline">\(Z(W)\)</span>, nodes of <span class="math inline">\(Z\)</span> that aren’t ancestors of <span class="math inline">\(W\)</span>, and the rest. For <span class="math inline">\(Z(W)\)</span>, we assume <span class="math inline">\(Z\)</span> and <span class="math inline">\(Y\)</span> have no causal association; for the rest, we assume they have no association, which is a stronger assumption.</p>
-<p>I hope this helps give you a better understanding of the three rules of do-calculus.</p>
 
 
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{zhang2023,
   author = {Jia Zhang},
-  title = {Intuition for {Do-Calculus}},
-  date = {2023-01-01},
+  title = {Detailed {Proof} of {IPW} {Identification}},
+  date = {2023-01-05},
   url = {https://jiazhang42.github.io/mysite/blog/do-calculus/},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-zhang2023" class="csl-entry quarto-appendix-citeas" role="doc-biblioentry">
-Jia Zhang. 2023. <span>“Intuition for Do-Calculus.”</span> January 1,
-2023. <a href="https://jiazhang42.github.io/mysite/blog/do-calculus/">https://jiazhang42.github.io/mysite/blog/do-calculus/</a>.
+Jia Zhang. 2023. <span>“Detailed Proof of IPW Identification.”</span>
+January 5, 2023. <a href="https://jiazhang42.github.io/mysite/blog/do-calculus/">https://jiazhang42.github.io/mysite/blog/do-calculus/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

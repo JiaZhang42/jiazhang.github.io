@@ -1,0 +1,55 @@
+---
+title: Detailed Proof of IPW Identification
+description: $E[Y(1)-Y(0)] = E[\frac{\mathbb{1}(T=1)Y}{e(W)}]-E[\frac{\mathbb{1}(T=0)Y}{1-e(W)}]$
+author:
+  - name: Jia Zhang
+    url: https://jiazhang42.github.io/mysite/ 
+    #affiliation: 
+    #affiliation-url:
+date: 01-05-2023
+categories: [Causal Inference] # self-defined categories
+citation: 
+  url: https://jiazhang42.github.io/mysite/blog/do-calculus/ 
+#image: frontdoor.jpg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+#bibliography: references.bib
+---
+
+We need to prove that under unconfoundedness and positivity,
+
+$EY(t) = E\frac{\mathbb{1}(T=t)Y}{P(t|W)}.$
+
+::: callout-note
+## Proof
+
+$$
+\begin{split}
+EY(t) &= E(Y|do(t))\\
+&= EE(Y|do(t), W)\\
+&= EE(Y|t, W)\\
+&= \Sigma_w E(Y|t, w) P(w)\\
+&= \Sigma_w \Sigma_y y P(y|t,w) P(w)\\
+&= \Sigma_w \Sigma_y y \frac{P(y,t,w)}{P(t,w)} P(w)\\
+&= \Sigma_w \Sigma_y y P(y,t,w)\frac{1}{P(t|w)}\\
+&= \Sigma_w \Sigma_y y E(\mathbb{1}(Y=y,T=t,W=w))\frac{1}{P(t|w)}\\
+&= \Sigma_w E(\Sigma_y y \mathbb{1}(Y=y) \mathbb{1}(T=t,W=w))\frac{1}{P(t|w)}\\
+&= \Sigma_w E(Y \mathbb{1}(T=t,W=w))\frac{1}{P(t|w)}\\
+&= E(Y \mathbb{1}(T=t) \Sigma_w \mathbb{1}(W=w)\frac{1}{P(t|w)})\\
+&= E(Y \mathbb{1}(T=t) \frac{1}{P(t|W)})
+\end{split}
+$$
+:::
+
+Note that we used the following properties of the indicator function:
+
+-   $$
+    E\mathbb{1}(X=x) = P(X=x)
+    $$
+
+-   $$
+    \mathbb{1}(X=x, Y=y) = \mathbb{1}(X=x) \mathbb{1}(Y=y)
+    $$
+
+-   $$
+    \Sigma_x \mathbb{1}(X=x)f(x) = f(X)
+    $$

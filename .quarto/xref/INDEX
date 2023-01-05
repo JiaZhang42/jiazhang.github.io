@@ -19,5 +19,8 @@
   },
   "blog/do-calculus/index.qmd": {
     "index.html": "874e6a50"
+  },
+  "blog/ipw/index.qmd": {
+    "index.html": "9b0200c0"
   }
 }
