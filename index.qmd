@@ -12,7 +12,7 @@ about:
 
 ## Hi there!
 
-I'm Jia, a Ph.D. student at **Department of Finance** at **Hong Kong University of Science and Technology**. Feel free to email me <a href="mailto:{{< var email >}}" title="{{< var email >}}"><i class="fa-solid fa-envelope"></i></a>.
+I'm Jia, a Ph.D. candidate at **Department of Finance** at **Hong Kong University of Science and Technology**. Feel free to email me <a href="mailto:{{< var email >}}" title="{{< var email >}}"><i class="fa-solid fa-envelope"></i></a>.
 
 ## Research Interests
 
