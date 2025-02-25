@@ -13,7 +13,7 @@ execute:
 I grew up in Neijiang, a small city in Sichuan, China.
 
 ::: {layout="[40,60]"}
-<!-- ![](images/marvin.jpg) -->
+![](images/marvin.jpg)
 
 ::: {#likes}
 I like:
