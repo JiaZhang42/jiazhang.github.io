@@ -14,6 +14,10 @@ about:
 
 I'm Jia, a Ph.D. candidate at **Department of Finance** at **Hong Kong University of Science and Technology**. Feel free to email me <a href="mailto:{{< var email >}}" title="{{< var email >}}"><i class="fa-solid fa-envelope"></i></a>.
 
+## Note
+
+This website was built for fun when I entered my 2nd year, Quarto just came out, and I felt so excited to create my own website. It hasn't been maintained for a long time and many information may be outdated. I will not be able to update it until the job market.
+
 ## Research Interests
 
 I'm interested in information transmission, belief formation, and persuasion in the financial market when social networks are present, and how they affect trading behavior and asset prices.

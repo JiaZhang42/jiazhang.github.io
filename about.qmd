@@ -13,7 +13,7 @@ execute:
 I grew up in Neijiang, a small city in Sichuan, China.
 
 ::: {layout="[40,60]"}
-![](images/marvin.jpg)
+<!-- ![](images/marvin.jpg) -->
 
 ::: {#likes}
 I like:
@@ -24,31 +24,32 @@ I like:
 
 -   cooking
 
-    -   It helps me enter "flow state" (otherwise my life would be in danger). Besides, I cook well with recipes.
+    -   It helps me enter the flow state. Besides, I cook well with recipes.
 
 -   stand-up comedy and comedies in general
 
-    -   my top-5 comedy show:
+    -   my top-3 comedy show:
         -   [Louie](https://en.wikipedia.org/wiki/Louie_(American_TV_series)) (by Louis C.K.)
 
         -   [Nathan for You](https://en.wikipedia.org/wiki/Nathan_for_You) (by Nathan Fielder)
-
-        -   [Community](https://en.wikipedia.org/wiki/Community_(TV_series)) (by Dan Harmon)
-
-        -   [Black Books](https://en.wikipedia.org/wiki/Black_Books) (by Dylan Moran)
-
         -   [Fleabag Season 2](https://en.wikipedia.org/wiki/Fleabag) (by Phoebe Waller-Bridge)
+
+        <!-- -   [Community](https://en.wikipedia.org/wiki/Community_(TV_series)) (by Dan Harmon) -->
+
+        <!-- -   [Black Books](https://en.wikipedia.org/wiki/Black_Books) (by Dylan Moran) -->
+
+
 :::
 :::
 
-::: {#map layout="[55,5,40]" layout-valign="bottom"}
-::: {#dislikes}
-I don't like:
+<!-- ::: {#map layout="[55,5,40]" layout-valign="bottom"} -->
+<!-- ::: {#dislikes} -->
+<!-- I don't like: -->
 
--   small talks
-    -   Why would people ask questions they don't want to know answers to?
--   mountain hiking
-    -   Stay away from the activities reminding you that life is meaningless.
+<!-- -   small talks -->
+<!--     -   Why would people ask questions they don't want to know answers to? -->
+<!-- -   mountain hiking -->
+<!--     -   Stay away from the activities reminding you that life is meaningless. -->
 
 ------------------------------------------------------------------------
 
